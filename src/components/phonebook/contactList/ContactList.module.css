@@ -1,0 +1,26 @@
+.listItem {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  display: flex;
+
+  justify-content: space-between;
+  width: 50%;
+}
+
+.buttom {
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  border: none;
+}
+.buttom:active {
+  background-color: crimson;
+}
+.buttom:hover {
+  outline: solid crimson 2px;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
