@@ -31,7 +31,11 @@ class App extends Component {
   }
 
   toSubmit = (data) => {
-    if (this.state.contacts.find((contact) => contact.name === data.name)) {
+    if (
+      this.state.contacts.find(
+        (contact) => contact.name.toLowerCase() === data.name.toLowerCase()
+      )
+    ) {
       alert(`${data.name} is already in contact`);
     } else
       this.setState((prevState) => ({
